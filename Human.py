@@ -11,7 +11,7 @@ class Human(player):
         self.choiceOfWeapon = w
 
     def printData(self):
-        print(self.life, self.mana, self.choiceOfWeapon)
+        print(self.life, self.mana, self.choiceOfWeapon, self.loseStatus)
 
     def damage(self):
         if self.choiceOfWeapon == "Sword":
