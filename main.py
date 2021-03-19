@@ -1,14 +1,13 @@
 from enum import Enum
+#import Human
+from player import player
+from Human import Human
+import random
 
-class dirst:
-    def first(self):
-        for i in range (10):
-            i += 2
-            print(i)
-
-    Weapon = Enum('Weapon', 'sword fireball')
-
-a = dirst()
-a.first()
-print(a.Weapon.fireball.name)
-print(a.Weapon.fireball)
+h = Human(100, 35)
+w = input("What weapon (Sword or Fireball)?")
+h.setWeapon(w)
+h.printData()
+d = h.damage()
+print(d)
+h.printData()
