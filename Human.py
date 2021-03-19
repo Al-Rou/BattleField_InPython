@@ -18,7 +18,7 @@ class Human(player):
             d = random.randint(7, 9)
             return d
         elif self.choiceOfWeapon == "Fireball":
-            if self.mana > 0:
+            if self.mana > 9:
                 d = random.randint(1, 18)
                 self.mana -= 10
                 return d

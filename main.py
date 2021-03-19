@@ -4,7 +4,7 @@ from player import player
 from Human import Human
 import random
 
-h = Human(100, 35)
+h = Human(100, 5)
 w = input("What weapon (Sword or Fireball)?")
 h.setWeapon(w)
 h.printData()
