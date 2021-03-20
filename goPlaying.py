@@ -18,11 +18,13 @@ class goPlaying:
             h.printData()
         if h.life <= 0:
             h.loseStatus = True
+            print("Human lost with below results:")
             h.printData()
             print("Monster won!")
             m.printData()
         else:
             m.loseStatus = True
+            print("Monster lost with below results:")
             m.printData()
             print("Human won!")
             h.printData()
