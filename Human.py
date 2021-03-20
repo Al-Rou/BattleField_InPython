@@ -1,4 +1,3 @@
-from enum import Enum
 from player import player
 import random
 

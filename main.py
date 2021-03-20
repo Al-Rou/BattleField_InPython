@@ -1,4 +1,3 @@
-from enum import Enum
 from player import player
 from Human import Human
 from Monster import Monster
