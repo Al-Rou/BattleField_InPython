@@ -9,8 +9,10 @@ class goPlaying:
         while((h.life > 0) and (m.life > 0)):
             w = input("Choose your weapon (Sword or Fireball):")
             h.setWeapon(w)
-            h.damage()
-            m.damage()
+            m.life -= h.damage()
+            m.printData()
+            h.life -= m.damage()
+            h.printData()
         if h.life <= 0:
             h.loseStatus = True
             h.printData()
