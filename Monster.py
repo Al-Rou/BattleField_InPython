@@ -2,7 +2,7 @@ from player import player
 import random
 
 class Monster(player):
-    def __init__(self):
+    def __init__(self, life):
         super().__init__(life)
 
     def damage(self):
