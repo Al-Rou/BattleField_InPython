@@ -2,6 +2,8 @@ from player import player
 from Human import Human
 from Monster import Monster
 
+#This class defines how the play should go on
+#As soon as this class is instantiated, the play starts
 class goPlaying:
     def __init__(self):
         h = Human(100, 35)
