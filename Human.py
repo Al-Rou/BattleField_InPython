@@ -8,11 +8,7 @@ class Human(player):
         self.mana = mana
     #Weapon = Enum('Weapon', 'sword fireball')
     def setWeapon(self, w):
-        if (w == "Sword") or (w == "Fireball"):
-            self.choiceOfWeapon = w
-        else:
-            print("Your choice of weapon is not valid!")
-            self.choiceOfWeapon = None
+        self.choiceOfWeapon = w
 
     def printData(self):
         print(self.life, self.mana, self.choiceOfWeapon, self.loseStatus)

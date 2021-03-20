@@ -8,6 +8,9 @@ class goPlaying:
         m = Monster(100)
         while((h.life > 0) and (m.life > 0)):
             w = input("Choose your weapon (Sword or Fireball):")
+            while (w != "Sword") and (w != "Fireball"):
+                print("Your choice of weapon is not valid!")
+                w = input("Choose your weapon (Sword or Fireball):")
             h.setWeapon(w)
             m.life -= h.damage()
             m.printData()
