@@ -28,3 +28,5 @@ class Human(player):
                 return d
             else:
                 print("You don't have enough mana to employ Fireballs!")
+                d = random.randint(7, 9)
+                return d
