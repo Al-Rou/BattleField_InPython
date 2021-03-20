@@ -12,6 +12,12 @@ class goPlaying:
             h.damage()
             m.damage()
         if h.life <= 0:
+            h.loseStatus = True
+            h.printData()
             print("Monster won!")
+            m.printData()
         else:
+            m.loseStatus = True
+            m.printData()
             print("Human won!")
+            h.printData()
